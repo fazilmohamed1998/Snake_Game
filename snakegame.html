@@ -20,7 +20,21 @@
     text-align: center;
     font-size: 120px;
   }
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
 </style>
+
 </body>
 
 <script>
@@ -182,7 +196,7 @@
     const has_eaten_food = snake[0].x === food_x && snake[0].y === food_y;
     if (has_eaten_food) {
       // Increase score
-      score += 10;
+      score += 5;
       // Display score on screen
       document.getElementById('score').innerHTML = score;
       // Generate new food location
